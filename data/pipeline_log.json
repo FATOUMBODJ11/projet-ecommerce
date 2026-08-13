@@ -1,0 +1,54 @@
+{
+  "run_at": "2026-08-13T23:33:18.603013",
+  "steps": [
+    {
+      "step": "clean_clients",
+      "lignes_avant": 505,
+      "lignes_apres": 500,
+      "doublons_supprimes": 5
+    },
+    {
+      "step": "clean_produits",
+      "lignes_avant": 150,
+      "lignes_apres": 150,
+      "stock_manquants_imputes": 2
+    },
+    {
+      "step": "clean_promotions",
+      "lignes": 40
+    },
+    {
+      "step": "clean_ventes",
+      "lignes_avant": 15013,
+      "lignes_apres": 15005,
+      "doublons_supprimes": "8",
+      "orphelines_supprimees": 0,
+      "outliers_quantite_corriges": 45
+    },
+    {
+      "step": "curated_ventes",
+      "lignes": 15005,
+      "colonnes": [
+        "id_vente",
+        "id_client",
+        "id_produit",
+        "date_vente",
+        "quantite",
+        "prix_paye",
+        "segment",
+        "ville",
+        "categorie",
+        "prix",
+        "cout",
+        "montant_total",
+        "marge_unitaire",
+        "marge_totale",
+        "annee_mois"
+      ]
+    },
+    {
+      "step": "curated_kpis_mensuels",
+      "lignes": 13
+    }
+  ]
+}

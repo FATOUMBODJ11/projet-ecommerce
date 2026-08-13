@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: ecommerce_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: dataeng
+      POSTGRES_PASSWORD: dataeng_pwd
+      POSTGRES_DB: ecommerce_dw
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  # Interface web légère pour explorer la base sans client externe
+  # Accessible sur http://localhost:8081 une fois lancé
+  adminer:
+    image: adminer
+    container_name: ecommerce_adminer
+    restart: unless-stopped
+    ports:
+      - "8081:8080"
+    depends_on:
+      - postgres
+
+volumes:
+  pgdata:

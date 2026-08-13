@@ -1,0 +1,18 @@
+[
+  {
+    "start": "2026-08-13T15:44:21.197607",
+    "end": "2026-08-13T15:44:25.065423",
+    "duration_sec": 3.867816,
+    "success": true,
+    "stdout_tail": "AGING -> CURATED ===\n[curated_ventes] {'lignes': 15000, 'colonnes': ['id_vente', 'id_client', 'id_produit', 'date_vente', 'quantite', 'prix_paye', 'segment', 'ville', 'categorie', 'prix', 'cout', 'montant_total', 'marge_unitaire', 'marge_totale', 'annee_mois']}\n[curated_kpis_mensuels] {'lignes': 12}\n\nData Lake construit :\n  raw/      -> donn\u00e9es brutes (data/raw)\n  staging/  -> donn\u00e9es nettoy\u00e9es (data/staging)\n  curated/  -> donn\u00e9es enrichies (data/curated)\n\nLog complet -> data/pipeline_log.json\n",
+    "stderr_tail": ""
+  },
+  {
+    "start": "2026-08-13T15:57:38.196318",
+    "end": "2026-08-13T15:57:40.534506",
+    "duration_sec": 2.338188,
+    "success": true,
+    "stdout_tail": "AGING -> CURATED ===\n[curated_ventes] {'lignes': 15005, 'colonnes': ['id_vente', 'id_client', 'id_produit', 'date_vente', 'quantite', 'prix_paye', 'segment', 'ville', 'categorie', 'prix', 'cout', 'montant_total', 'marge_unitaire', 'marge_totale', 'annee_mois']}\n[curated_kpis_mensuels] {'lignes': 13}\n\nData Lake construit :\n  raw/      -> donn\u00e9es brutes (data/raw)\n  staging/  -> donn\u00e9es nettoy\u00e9es (data/staging)\n  curated/  -> donn\u00e9es enrichies (data/curated)\n\nLog complet -> data/pipeline_log.json\n",
+    "stderr_tail": ""
+  }
+]
