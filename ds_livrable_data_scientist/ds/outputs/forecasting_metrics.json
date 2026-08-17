@@ -1,0 +1,48 @@
+{
+  "prevision_globale": {
+    "methode_retenue": "Prophet",
+    "prochain_mois": "2025-08",
+    "quantite_prevue": 1253,
+    "intervalle_confiance": [
+      686,
+      1867
+    ],
+    "comparatif_methodes": [
+      {
+        "label": "Baseline naïve (mois -1)",
+        "mae": 294.5,
+        "rmse": 387.2757415589053,
+        "mape": 31.251581092206997
+      },
+      {
+        "label": "Baseline moyenne mobile 3 mois",
+        "mae": 251.5,
+        "rmse": 320.81086501412506,
+        "mape": 26.387540967855855
+      },
+      {
+        "label": "Prophet",
+        "mae": 290.9461659325507,
+        "rmse": 381.23736362558844,
+        "mape": 30.833833446566373
+      }
+    ]
+  },
+  "prevision_par_categorie": {
+    "methode_retenue": "LightGBM",
+    "comparatif_methodes": [
+      {
+        "label": "Baseline naïve par catégorie (mois -1)",
+        "mae": 41.25,
+        "rmse": 50.502475186865844,
+        "mape": 34.60301834087186
+      },
+      {
+        "label": "LightGBM par catégorie",
+        "mae": 44.69294299851407,
+        "rmse": 54.1556652290293,
+        "mape": 38.4778017753777
+      }
+    ]
+  }
+}
